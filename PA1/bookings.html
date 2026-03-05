@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JetSetGo - My Bookings</title>
+
+    <!-- css links -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/bookings.css">
+</head>
+<body>
+<!-- _____________________________________________________________________________________ -->
+    <!-- navigation -->
+    <nav class="nav_bar">
+        <div class="logo_container">
+            <img src="img/logo.png" alt="JetSetGo Logo">
+        </div>
+        <ul class="nav_links">
+            <li><a href="index.html">Book Flights</a></li>
+            <li class="active"><a href="bookings.html">Bookings</a></li>
+            <li><a href="planes.html">Planes</a></li>
+            <li><a href="favourites.html">Favourite Planes</a></li>
+        </ul>
+    </nav>
+<!-- _____________________________________________________________________________________ -->
+    <!-- main content -->
+    <main id="bookings_page">
+        <h1>My Bookings</h1>
+        <!-- _____________________________________________________________________________________ -->
+        <div class="bookings_container">
+            <!-- Mock Flight 1 - Johannesburg to Cape Town -->
+            <div class="booking_card">
+                <div class="booking_header">
+                    <h2>JNB → CPT</h2>
+                    <span class="booking_status">Confirmed</span>
+                </div>
+                <div class="booking_details">
+                    <div class="detail_item">
+                        <span class="detail_label">Plane:</span>
+                        <span class="detail_value">Boeing 737</span>
+                    </div>
+                    <div class="detail_item">
+                        <span class="detail_label">Distance:</span>
+                        <span class="detail_value">1,400 km</span>
+                    </div>
+                    <div class="detail_item">
+                        <span class="detail_label">Price:</span>
+                        <span class="detail_value">R 1,850</span>
+                    </div>
+                    <div class="detail_item">
+                        <span class="detail_label">Flight Time:</span>
+                        <span class="detail_value">2h 10m</span>
+                    </div>
+                </div>
+                <button class="cancel_btn">Cancel Flight</button>
+            </div>
+            <!-- _____________________________________________________________________________________ -->
+            <!-- Mock Flight 2 - Cape Town to Durban -->
+            <div class="booking_card">
+                <div class="booking_header">
+                    <h2>CPT → DUR</h2>
+                    <span class="booking_status">Confirmed</span>
+                </div>
+                <div class="booking_details">
+                    <div class="detail_item">
+                        <span class="detail_label">Plane:</span>
+                        <span class="detail_value">Airbus A320</span>
+                    </div>
+                    <div class="detail_item">
+                        <span class="detail_label">Distance:</span>
+                        <span class="detail_value">1,270 km</span>
+                    </div>
+                    <div class="detail_item">
+                        <span class="detail_label">Price:</span>
+                        <span class="detail_value">R 1,620</span>
+                    </div>
+                    <div class="detail_item">
+                        <span class="detail_label">Flight Time:</span>
+                        <span class="detail_value">2h 00m</span>
+                    </div>
+                </div>
+                <button class="cancel_btn">Cancel Flight</button>
+            </div>
+           <!-- _____________________________________________________________________________________ -->
+            <!-- Mock Flight 3 - Johannesburg to London -->
+            <div class="booking_card">
+                <div class="booking_header">
+                    <h2>JNB → LHR</h2>
+                    <span class="booking_status">Confirmed</span>
+                </div>
+                <div class="booking_details">
+                    <div class="detail_item">
+                        <span class="detail_label">Plane:</span>
+                        <span class="detail_value">Boeing 787 Dreamliner</span>
+                    </div>
+                    <div class="detail_item">
+                        <span class="detail_label">Distance:</span>
+                        <span class="detail_value">9,080 km</span>
+                    </div>
+                    <div class="detail_item">
+                        <span class="detail_label">Price:</span>
+                        <span class="detail_value">R 11,450</span>
+                    </div>
+                    <div class="detail_item">
+                        <span class="detail_label">Flight Time:</span>
+                        <span class="detail_value">11h 20m</span>
+                    </div>
+                </div>
+                <button class="cancel_btn">Cancel Flight</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

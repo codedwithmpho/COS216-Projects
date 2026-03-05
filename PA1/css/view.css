@@ -1,0 +1,98 @@
+
+#view_page {
+    margin-top: 80px;
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ______________________________________________________________ */
+.back_btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #506449;
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.back_btn:hover {
+    background-color: #5d854e;
+}
+/* ______________________________________________________________ */
+.plane_detail_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background-color: #F2EEE8;
+    border: 2px solid #4E0A0B;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.plane_detail_image img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #4E0A0B;
+    border-radius: 10px;
+    background-color: #9DAD71;
+}
+
+.plane_detail_info h1 {
+    color: #4E0A0B;
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #9DAD71;
+}
+/* ______________________________________________________________ */
+.detail_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.detail_section {
+    margin-bottom: 15px;
+}
+
+.detail_section h3 {
+    color: #4E0A0B;
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+}
+
+.detail_section p {
+    margin: 0;
+    color: #333;
+}
+
+.detail_section ul {
+    margin: 5px 0;
+    padding-left: 20px;
+    color: #333;
+}
+
+.detail_section li {
+    margin: 3px 0;
+}
+
+.plane_image, .plane_detail_image img {
+    background: linear-gradient(135deg, #9DAD71, #506449);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    min-height: 180px;
+}
+
+.plane_image:before, .plane_detail_image img:before {
+    content: "✈️";
+    font-size: 50px;
+}

@@ -1,0 +1,52 @@
+
+/* navigation bar that throughout the top */
+.nav_bar {
+    width: 100%;
+    background-color: #4E0A0B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.logo_container img {
+    height: 40px; 
+    width: auto;
+}
+/* ______________________________________________________________ */
+/* the actual navigation links */
+.nav_links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding-right: 15px;
+}
+
+.nav_links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+.nav_links li a:hover {
+    background-color: #6B1112;
+    color: #F6A93A;
+    border-radius: 5px;
+}
+/* ______________________________________________________________ */
+/* Active page indicator */
+.nav_links li.active a {
+    background-color: #9DAD71;
+    color: white;
+    border-radius: 5px;
+}
+/* ______________________________________________________________ */

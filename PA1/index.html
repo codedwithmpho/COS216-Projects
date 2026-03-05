@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JetSetGo - Book Flights</title>
+
+    <!-- css links -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/book.css">
+</head>
+<body>
+<!-- _____________________________________________________________________________________ -->
+    <!-- navigation -->
+    <nav class="nav_bar">
+        <div class="logo_container">
+            <img src="img/logo.png" alt="JetSetGo Logo" >
+        </div>
+        <ul class="nav_links">
+            <li class="active"><a href="index.html">Book Flights</a></li>
+            <li><a href="bookings.html">Bookings</a></li>
+            <li><a href="planes.html">Planes</a></li>
+            <li><a href="favourites.html">Favourite Planes</a></li>
+        </ul>
+    </nav>
+    <!-- _____________________________________________________________________________________ -->
+    <!-- main content -->
+    <main id="book_flights_page">
+        <h1>Book Your Flight</h1>
+        <!-- _____________________________________________________________________________________ -->
+        <form id="flight_booking_form">
+            <!-- Plane Type Dropdown -->
+            <div class="form_group">
+                <label for="plane_type">Plane Type:</label>
+                <select id="plane_type" name="plane_type">
+                    <option value="" disabled selected>Select plane type</option>
+                    <option value="boeing737">Boeing 737</option>
+                    <option value="boeing787">Boeing 787 Dreamliner</option>
+                    <option value="airbus320">Airbus A320</option>
+                    <option value="airbus380">Airbus A380</option>
+                    <option value="embraer175">Embraer E175</option>
+                </select>
+            </div>
+            <!-- _____________________________________________________________________________________ -->
+            <!-- Departure Airport Dropdown -->
+            <div class="form_group">
+                <label for="departure">Departure Airport:</label>
+                <select id="departure" name="departure">
+                    <option value="" disabled selected>Select departure airport</option>
+                    <optgroup label="South African Airports">
+                        <option value="jhb">JNB - Johannesburg OR Tambo</option>
+                        <option value="cpt">CPT - Cape Town International</option>
+                        <option value="dur">DUR - King Shaka International</option>
+                        <option value="plz">PLZ - Port Elizabeth</option>
+                        <option value="bfn">BFN - Bloemfontein</option>
+                    </optgroup>
+                    <optgroup label="International Airports">
+                        <option value="jfk">JFK - New York</option>
+                        <option value="lhr">LHR - London Heathrow</option>
+                        <option value="cdg">CDG - Paris</option>
+                        <option value="dxb">DXB - Dubai</option>
+                        <option value="hnd">HND - Tokyo</option>
+                    </optgroup>
+                </select>
+            </div>
+            <!-- _____________________________________________________________________________________ -->
+            <!-- Arrival Airport Dropdown -->
+            <div class="form_group">
+                <label for="arrival">Arrival Airport:</label>
+                <select id="arrival" name="arrival">
+                    <option value="" disabled selected>Select arrival airport</option>
+                    <optgroup label="South African Airports">
+                        <option value="jhb">JNB - Johannesburg OR Tambo</option>
+                        <option value="cpt">CPT - Cape Town International</option>
+                        <option value="dur">DUR - King Shaka International</option>
+                        <option value="plz">PLZ - Port Elizabeth</option>
+                        <option value="bfn">BFN - Bloemfontein</option>
+                    </optgroup>
+                    <optgroup label="International Airports">
+                        <option value="jfk">JFK - New York</option>
+                        <option value="lhr">LHR - London Heathrow</option>
+                        <option value="cdg">CDG - Paris</option>
+                        <option value="dxb">DXB - Dubai</option>
+                        <option value="hnd">HND - Tokyo</option>
+                    </optgroup>
+                </select>
+            </div>
+            <!-- _____________________________________________________________________________________ -->
+            <!-- Date pickers  -->
+            <div class="form_row">
+                <div class="form_group">
+                    <label for="departure_date">Departure Date:</label>
+                    <input type="date" id="departure_date" name="departure_date">
+                </div>
+
+                <div class="form_group">
+                    <label for="arrival_date">Arrival Date:</label>
+                    <input type="date" id="arrival_date" name="arrival_date">
+                </div>
+            </div>
+            <!-- _____________________________________________________________________________________ -->
+            <!-- Return Flight Toggle Switch -->
+            <div class="form_group toggle_group">
+                <label for="return_flight">Return Flight:</label>
+                <label class="toggle_switch">
+                    <input type="checkbox" id="return_flight" name="return_flight">
+                    <span class="toggle_slider"></span>
+                </label>
+            </div>
+            <!-- _____________________________________________________________________________________ -->
+            <!-- Number of Passengers -->
+            <div class="form_group">
+                <label for="passengers">Number of Passengers:</label>
+                <input type="number" id="passengers" name="passengers" min="1" max="10" value="1">
+            </div>
+            <!-- _____________________________________________________________________________________ -->
+            <!-- Cabin Class Selection -->
+            <div class="form_group">
+                <label>Cabin Class:</label>
+                <div class="radio_group">
+                    <label><input type="radio" name="cabin_class" value="economy" checked> Economy</label>
+                    <label><input type="radio" name="cabin_class" value="premium"> Premium Economy</label>
+                    <label><input type="radio" name="cabin_class" value="business"> Business</label>
+                    <label><input type="radio" name="cabin_class" value="first"> First Class</label>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="search_flights_btn">Search Available Flights</button>
+        </form>
+    </main>
+</body>
+</html>

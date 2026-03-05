@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JetSetGo - Our Fleet</title>
+
+    <!-- css links -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/planes.css">
+</head>
+<body>
+<!-- _____________________________________________________________________________________ -->
+    <!-- navigation -->
+    <nav class="nav_bar">
+        <div class="logo_container">
+            <img src="img/logo.png" alt="JetSetGo Logo">  
+        </div>
+        <ul class="nav_links">
+            <li><a href="index.html">Book Flights</a></li>
+            <li><a href="bookings.html">Bookings</a></li>
+            <li class="active"><a href="planes.html">Planes</a></li>
+            <li><a href="favourites.html">Favourite Planes</a></li>
+        </ul>
+    </nav>
+    <!-- _____________________________________________________________________________________ -->
+    <!-- main content -->
+    <main id="planes_page">
+        <h1>Our Fleet</h1>
+        
+        <!-- Search Bar -->
+        <div class="search_container">
+            <input type="text" placeholder="Search planes by model or manufacturer..." class="search_bar">
+        </div>
+
+        <!-- Filters Section -->
+        <div class="filters_section">
+            <h2>Filters</h2>  
+            <div class="filters_grid">
+                <!-- Seat Range Filter -->
+                <div class="filter_group">
+                    <label>Seat Range:</label>
+                    <div class="range_slider">
+                        <input type="range" min="50" max="500" value="275" class="slider">
+                        <span>50 - 500 seats</span>
+                    </div>
+                </div>
+
+                <!-- Cabin Class Filter -->
+                <div class="filter_group">
+                    <label>Cabin Class:</label>
+                    <div class="checkbox_group">
+                        <label><input type="checkbox"> Economy</label>
+                        <label><input type="checkbox"> Premium</label>
+                        <label><input type="checkbox"> Business</label>
+                        <label><input type="checkbox"> First</label>
+                    </div>
+                </div>
+
+                <!-- Max Range Filter -->
+                <div class="filter_group">
+                    <label>Max Range (km):</label>
+                    <select>
+                        <option>Any range</option>
+                        <option>Under 5,000 km</option>
+                        <option>5,000 - 10,000 km</option>
+                        <option>10,000 - 15,000 km</option>
+                        <option>Over 15,000 km</option>
+                    </select>
+                </div>
+
+                <!-- Max Cargo Filter -->
+                <div class="filter_group">
+                    <label>Max Cargo (kg):</label>
+                    <select>
+                        <option>Any capacity</option>
+                        <option>Under 20,000 kg</option>
+                        <option>20,000 - 40,000 kg</option>
+                        <option>40,000 - 60,000 kg</option>
+                        <option>Over 60,000 kg</option>
+                    </select>
+                </div>
+
+                <!-- Manufacturer Filter -->
+                <div class="filter_group">
+                    <label>Manufacturer:</label>
+                    <div class="checkbox_group">
+                        <label><input type="checkbox"> Boeing</label>
+                        <label><input type="checkbox"> Airbus</label>
+                        <label><input type="checkbox"> Embraer</label>
+                        <label><input type="checkbox"> Bombardier</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- _____________________________________________________________________________________ -->
+        <!-- Sort Section -->
+        <div class="sort_section">
+            <label>Sort by:</label>
+            <select class="sort_select">
+                <option>Number of Seats (Low to High)</option>
+                <option>Number of Seats (High to Low)</option>
+                <option>Manufacturer (A-Z)</option>
+                <option>Manufacturer (Z-A)</option>
+                <option>Range (Low to High)</option>
+                <option>Range (High to Low)</option>
+            </select>
+        </div>
+        <!-- _____________________________________________________________________________________ -->
+        <!-- Planes Cards Grid -->
+        <div class="planes_grid">
+            <!-- Plane Card 1 - Boeing 737 -->
+            <div class="plane_card">
+                <img src="img/plane_image.png" alt="Boeing 737" class="plane_image">
+                <div class="plane_info">
+                    <h3>Boeing 737</h3>  
+                    <p class="manufacturer">Boeing</p>
+                    <p class="seats">162 seats</p>
+                    <a href="view.html?plane=boeing737" class="view_details_btn">View Details</a>
+                    <button class="favourite_btn">Add to Favourites</button>
+                </div>
+            </div>
+
+            <!-- Plane Card 2 - Boeing 787 -->
+            <div class="plane_card">
+                <img src="img/plane_image.png" alt="Boeing 787 Dreamliner" class="plane_image">
+                <div class="plane_info">
+                    <h3>Boeing 787 Dreamliner</h3>
+                    <p class="manufacturer">Boeing</p>
+                    <p class="seats">290 seats</p>
+                    <a href="view.html?plane=boeing787" class="view_details_btn">View Details</a>
+                    <button class="favourite_btn">Add to Favourites</button>
+                </div>
+            </div>
+
+            <!-- Plane Card 3 - Airbus A320 -->
+            <div class="plane_card">
+                <img src="img/plane_image.png" alt="Airbus A320" class="plane_image">
+                <div class="plane_info">
+                    <h3>Airbus A320</h3>
+                    <p class="manufacturer">Airbus</p>
+                    <p class="seats">180 seats</p>
+                    <a href="view.html?plane=airbus320" class="view_details_btn">View Details</a>
+                    <button class="favourite_btn">Add to Favourites</button>
+                </div>
+            </div>
+
+            <!-- Plane Card 4 - Airbus A380 -->
+            <div class="plane_card">
+                <img src="img/plane_image.png" alt="Airbus A380" class="plane_image">
+                <div class="plane_info">
+                    <h3>Airbus A380</h3>
+                    <p class="manufacturer">Airbus</p>
+                    <p class="seats">517 seats</p>
+                    <a href="view.html?plane=airbus380" class="view_details_btn">View Details</a>
+                    <button class="favourite_btn">Add to Favourites</button>
+                </div>
+            </div>
+
+            <!-- Plane Card 5 - Embraer E175 -->
+            <div class="plane_card">
+                <img src="img/plane_image.png" alt="Embraer E175" class="plane_image">
+                <div class="plane_info">
+                    <h3>Embraer E175</h3>
+                    <p class="manufacturer">Embraer</p>
+                    <p class="seats">76 seats</p>
+                    <a href="view.html?plane=embraer175" class="view_details_btn">View Details</a>
+                    <button class="favourite_btn">Add to Favourites</button>
+                </div>
+            </div>
+
+            <!-- Plane Card 6 - Bombardier CRJ900 -->
+            <div class="plane_card">
+                <img src="img/plane_image.png" alt="Bombardier CRJ900" class="plane_image">
+                <div class="plane_info">
+                    <h3>Bombardier CRJ900</h3>
+                    <p class="manufacturer">Bombardier</p>
+                    <p class="seats">86 seats</p>
+                    <a href="view.html?plane=crj900" class="view_details_btn">View Details</a>
+                    <button class="favourite_btn">Add to Favourites</button>
+                </div>
+            </div>
+
+            <!-- Plane Card 7 - Boeing 777 -->
+            <div class="plane_card">
+                <img src="img/plane_image.png" alt="Boeing 777" class="plane_image">
+                <div class="plane_info">
+                    <h3>Boeing 777</h3>
+                    <p class="manufacturer">Boeing</p>
+                    <p class="seats">350 seats</p>
+                    <a href="view.html?plane=boeing777" class="view_details_btn">View Details</a>
+                    <button class="favourite_btn">Add to Favourites</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
